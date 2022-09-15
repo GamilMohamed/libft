@@ -1,0 +1,42 @@
+
+memset
+memcpy
+memmove
+memcmp
+memchr
+strlcpy
+strlcat
+calloc
+
+strmapi
+
+##################
+isalpha OK
+isdigit OK
+isalnum OK
+isascii OK
+isprint OK
+
+toupper OK
+tolower OK
+
+strlen OK
+strchr OK
+strrchr
+strncmp OK
+strnstr OK
+strtrim
+strdup OK
+striteri
+substr
+split OK BOOM
+strjoin OK BOOM
+
+putchar_fd OK
+putstr_fd
+putend_fd
+putnbr_fd OK
+
+bzero OK
+atoi
+itoa
