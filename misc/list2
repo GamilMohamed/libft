@@ -1,9 +1,3 @@
-
-memset
-memcpy
-memmove
-memcmp
-memchr
 strlcpy
 strlcat
 calloc
@@ -11,6 +5,12 @@ calloc
 strmapi
 
 ##################
+memcmp OK
+memcpy OK
+memmove
+memset OK
+memchr OK
+
 isalpha OK
 isdigit OK
 isalnum OK

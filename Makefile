@@ -6,7 +6,7 @@
 #    By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/24 20:15:20 by apuchill          #+#    #+#              #
-#    Updated: 2022/09/19 02:44:16 by mohazerr         ###   ########.fr        #
+#    Updated: 2022/09/19 04:06:19 by mohazerr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,10 @@ srcs/ft_substr.c \
 srcs/ft_tolower.c \
 srcs/ft_toupper.c \
 srcs/ft_memcpy.c \
+srcs/ft_memset.c \
+srcs/ft_memmove.c \
+srcs/ft_memchr.c \
+srcs/ft_memcmp.c \
 
 OBJS		=	$(subst $(DIR_SRCS), $(DIR_OBJS), $(SRCS:.c=.o))
 SOURCES_PREFIXED = $(addprefix $(DIR_SRCS), $(SRCS))

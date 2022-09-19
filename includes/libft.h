@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:33:40 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 02:41:54 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 04:08:08 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ int			ft_tolower(int c);
 int			ft_toupper(int c);
 
 void		*ft_memcpy(void *dst, const void *src, size_t n);
+void		*ft_memset(void *b, int c, size_t len);
+void		*ft_memmove(void *dst, const void *src, size_t len);
+void		*ft_memchr(const void *s, int c, size_t n);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int			ft_strlen(const char *str);
 char		*ft_strchr(char const *s, int c);
