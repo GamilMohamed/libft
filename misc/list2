@@ -25,16 +25,16 @@ strchr OK
 strrchr
 strncmp OK
 strnstr OK
-strtrim
+strtrim OK BOOM
 strdup OK
-striteri
+striteri OK BOOM
 substr
 split OK BOOM
 strjoin OK BOOM
 
 putchar_fd OK
-putstr_fd
-putend_fd
+putstr_fd OK CLEAR
+putend_fd OK CLEAR
 putnbr_fd OK
 
 bzero OK

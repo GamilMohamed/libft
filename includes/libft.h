@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:33:40 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/10 18:41:38 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 02:41:54 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,14 @@ int			ft_isprint(int c);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 
+void		*ft_memcpy(void *dst, const void *src, size_t n);
+
 int			ft_strlen(const char *str);
 char		*ft_strchr(char const *s, int c);
 char		*ft_strrchr(char const *s, int c);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strnstr(char const *haystack, char const *needle, size_t len);
-char		*ft_strtrim(char const *s);
+char		*ft_strtrim(char const *s, char const *set);
 char		*ft_strdup(const char *s1);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_substr(char const *s, unsigned int start, size_t len);
@@ -45,7 +47,6 @@ void		ft_putstr_fd(char const *s, int fd);
 void		ft_bzero(void *s, size_t n);
 int			ft_atoi(const char *str);
 char		*ft_itoa(int n);
-
 
 char		*ft_strjoin(char const *s1, char const *s2);
 #endif
