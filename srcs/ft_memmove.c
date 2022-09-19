@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 02:52:21 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 03:51:31 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 16:21:20 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (!srcchar && !dstchar)
 		return (NULL);
 	if (dst > src)
-		while(i++ < len)
+		while (i++ < len)
 			dstchar[len - i] = srcchar[len - i];
 	else
 	{

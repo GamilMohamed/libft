@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:48:22 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/15 03:02:55 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 14:50:05 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	x = 0;
 	y = 0;
+	if (s1 == 0)
+		return (NULL);
 	total = ft_strlen((char *)s1) + ft_strlen((char *)s2);
 	new = malloc(sizeof(char) * total + 1);
 	if (!new)

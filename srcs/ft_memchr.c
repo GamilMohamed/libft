@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 03:52:58 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 04:02:10 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 16:21:13 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	schar = (char *)s;
-	while(i < n)
+	while (i < n)
 	{
 		if (schar[i] == c)
 			return (&schar[i]);

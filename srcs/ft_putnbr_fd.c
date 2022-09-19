@@ -6,18 +6,11 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 02:36:08 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/09 20:03:07 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 15:53:25 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
-
-// void	ft_putchar_fd(char c, int fd)
-// {
-// 	write(fd, &c, 1);
-// }
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:27:01 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/15 03:13:19 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 22:16:24 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char		*var;
 
 	var = malloc(sizeof(char) * len + 1);
+	if (s == 0)
+		return (NULL);
 	if (!var)
 		return (NULL);
 	i = 0;

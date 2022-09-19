@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 17:11:13 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/15 02:35:38 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 16:20:51 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,18 +64,18 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		index;
 
+	if (s == 0)
+		return (NULL);
 	i = 0;
 	index = 0;
 	nb = count(s, c);
-	tab = malloc(sizeof(char *) * nb + 1000);
+	tab = malloc(sizeof(char *) * nb);
 	if (!tab)
 		return (NULL);
 	while (s[i])
 	{
 		while (s[i] && charcheck(s[i], c))
 			i++;
-		if (s[i] == '\0')
-			break ;
 		start = i;
 		while (s[i] && !(charcheck(s[i], c)))
 			i++;

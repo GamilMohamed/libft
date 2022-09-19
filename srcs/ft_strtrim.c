@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 13:31:53 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/15 23:04:24 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/19 14:50:46 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ char	*ft_strtrim(char const *s, char const *set)
 	int		len;
 	char	*var;
 
+	if (s == 0)
+		return (NULL);
 	if (*s == '\0')
 		return ("");
 	len = ft_strlen(s);

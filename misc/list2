@@ -1,13 +1,15 @@
-strlcpy
 strlcat
-calloc
 
-strmapi
 
 ##################
+calloc
+memmove
+strrchr
+substr
+
+strlcpy OK
 memcmp OK
 memcpy OK
-memmove
 memset OK
 memchr OK
 
@@ -22,15 +24,13 @@ tolower OK
 
 strlen OK
 strchr OK
-strrchr
 strncmp OK
 strnstr OK
-strtrim OK BOOM
+strtrim OK CLEAR
 strdup OK
-striteri OK BOOM
-substr
-split OK BOOM
-strjoin OK BOOM
+striteri OK CLEAR
+split OK CLEAR
+strjoin OK CLEAR
 
 putchar_fd OK
 putstr_fd OK CLEAR
@@ -38,5 +38,6 @@ putend_fd OK CLEAR
 putnbr_fd OK
 
 bzero OK
-atoi
-itoa
+atoi OK
+itoa OK CLEAR
+strmapi OK CLEAR
