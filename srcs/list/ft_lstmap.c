@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:57:51 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/20 23:31:13 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/21 00:50:18 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	while (lst != NULL)
 	{
 		newlist->next = ft_lstnew((*f)(lst->content));
-		if(!newlist->next)
+		if (!newlist->next)
 		{
 			ft_lstclear(&headlist, del);
 			return (NULL);

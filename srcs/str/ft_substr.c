@@ -6,7 +6,7 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:27:01 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/20 22:24:27 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/21 00:50:31 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while ((i < start) && (s[i]))
 		i++;
 	if (s[i] == '\0')
-		return(ft_strdup(""));
+		return (ft_strdup(""));
 	else
 	{
 		start = 0;
