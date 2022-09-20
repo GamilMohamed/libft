@@ -6,12 +6,11 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 12:38:03 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 17:00:58 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/20 03:34:12 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strcpy(char *s1, char *s2)
 {

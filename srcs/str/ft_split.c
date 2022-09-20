@@ -6,12 +6,11 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 17:11:13 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 16:20:51 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/20 03:34:34 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 int	charcheck(char a, char b)
 {

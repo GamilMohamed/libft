@@ -6,12 +6,11 @@
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 20:43:56 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/11 18:44:18 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/09/20 03:34:30 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {
