@@ -1,41 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/08 20:27:01 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/20 22:24:27 by mohazerr         ###   ########.fr       */
+/*   Created: 2022/09/20 14:57:51 by mohazerr          #+#    #+#             */
+/*   Updated: 2022/09/20 23:31:13 by mohazerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t		i;
-	char		*var;
+	t_list	*newlist;
+	t_list	*headlist;
 
-	i = 0;
-	var = malloc(sizeof(char) * len + 1);
-	if (s == 0)
+	if (lst == NULL)
 		return (NULL);
-	if (!var)
+	newlist = ft_lstnew((*f)(lst->content));
+	if (!newlist)
 		return (NULL);
-	while ((i < start) && (s[i]))
-		i++;
-	if (s[i] == '\0')
-		return(ft_strdup(""));
-	else
+	headlist = newlist;
+	lst = lst->next;
+	while (lst != NULL)
 	{
-		start = 0;
-		while (start < len)
+		newlist->next = ft_lstnew((*f)(lst->content));
+		if(!newlist->next)
 		{
-			var[start] = s[start + i];
-			start++;
+			ft_lstclear(&headlist, del);
+			return (NULL);
 		}
+		newlist = newlist->next;
+		lst = lst->next;
 	}
-	var[start] = '\0';
-	return (var);
+	return (headlist);
 }
