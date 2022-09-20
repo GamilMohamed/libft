@@ -6,7 +6,7 @@
 #    By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/24 20:15:20 by apuchill          #+#    #+#              #
-#    Updated: 2022/09/20 04:29:05 by mohazerr         ###   ########.fr        #
+#    Updated: 2022/09/20 04:49:50 by mohazerr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ $(DIR_SRCS)/$(DIR_LIST)/ft_lstlast.c \
 $(DIR_SRCS)/$(DIR_LIST)/ft_lstadd_back.c \
 $(DIR_SRCS)/$(DIR_LIST)/ft_lstdelone.c \
 $(DIR_SRCS)/$(DIR_LIST)/ft_lstclear.c \
+$(DIR_SRCS)/$(DIR_LIST)/ft_lstiter.c \
 
 OBJS		=	$(subst $(DIR_SRCS), $(DIR_OBJS), $(SRCS:.c=.o))
 SOURCES_PREFIXED = $(addprefix $(DIR_SRCS), $(SRCS))
