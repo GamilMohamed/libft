@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mohazerr <mohazerr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mgamil <mgamil@42.student.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 21:37:09 by mohazerr          #+#    #+#             */
-/*   Updated: 2022/09/19 21:23:26 by mohazerr         ###   ########.fr       */
+/*   Updated: 2022/11/08 01:55:56 by mgamil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,22 @@
 
 char	*ft_strnstr(char const *haystack, char const *needle, size_t len)
 {
-	int		i;
-	size_t	x;
+	size_t		i;
+	size_t		j;
 
-	x = 0;
+	i = 0;
 	if (!*needle)
 		return ((char *)(haystack));
 	if (len == 0)
 		return (NULL);
-	while ((*haystack) && (x < len))
+	while ((haystack[i]) && (i < len))
 	{
-		i = 0;
-		while ((needle[i] == *haystack) && (x < len))
-		{
-			if (needle[i + 1] == '\0')
-				return ((char *)(haystack - i));
-			i++;
-			haystack++;
-			x++;
-		}
-		haystack++;
-		x++;
+		j = 0;
+		while (needle[j] == haystack[i + j] && j + i < len && haystack[i + j])
+			j++;
+		if (needle[j] == '\0')
+			return ((char *)(haystack + i));
+		i++;
 	}
 	return (NULL);
 }
